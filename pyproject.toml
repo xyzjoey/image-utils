@@ -1,0 +1,14 @@
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+
+[testenv]
+skip_install = true
+deps =
+    opencv-python
+    numpy
+
+[testenv:process_png]
+commands =
+    python process_png.py {posargs}
+"""
